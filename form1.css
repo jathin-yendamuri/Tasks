@@ -1,0 +1,113 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #f0f8ff, #f4f4f4);
+    margin: 0;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+div {
+    max-width: 750px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+div:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 30px;
+}
+
+legend {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+label {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    display: block;
+    color: #555;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="number"], 
+input[type="date"], textarea, select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+input[type="submit"] {
+    background: linear-gradient(120deg, #007bff, #00d4ff);
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(120deg, #0056b3, #0098cc);
+}
+
+/* Styling for the Terms and Conditions */
+p {
+    font-size: 0.95em;
+    line-height: 1.6;
+    color: #666;
+}
+
+h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+fieldset:last-of-type {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Aligning Radio Buttons and Checkboxes */
+input[type="radio"] + label, input[type="checkbox"] + label {
+    font-size: 1em;
+    margin-right: 20px;
+    display: inline-block;
+}
+

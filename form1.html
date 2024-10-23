@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel ="stylesheet" href = "form1.css"/>
+    </head>
+    <body>
+        <div>
+
+            <form name = "form1" method="get" action = "" >
+
+                <fieldset>
+                    <legend>Personal Information :</legend>
+
+                    <label for = "fname">First Name : </label>
+                <input type = "text" name = "fname" value = ""/><br/>
+    
+                <label for = "mname">Middle Name : </label>
+                <input type = "text" name = "mname" value = ""/><br/>
+    
+                <label for = "lname">Last Name : </label>
+                <input type = "text" name = "lname" value = ""/><br/>
+    
+                <label for = "mail">e-Mail : </label>
+                <input type = "email" name = "mail" value = ""/><br/>
+    
+                <label for = "pnno">Tel-number : </label>
+                <input type = "tel" name = "phno" value = ""/><br/>
+    
+                <label for = "martial">Martial status : </label>
+                <select name = "martial" id="martial" required="required">
+                    <option value = "Married">Married</option>
+                    <option value = "unmarried">unmarried</option>
+                    <option value ="Single">Single</option>
+                </select><br/>
+    
+    
+                <label for = "gender">Gender : </label>
+                <input type = "radio" name = "gender" id = "m" value="male"/>
+                <label for = "gender">Male  </label>
+                <input type = "radio" name = "gender" id = "f" value="female"/>
+                <label for = "gender">Female  </label>
+                <input type = "radio" name = "gender" id = "o" value="others"/>
+                <label for = "gender">others  </label><br/>
+
+                <label for ="address">Address : </label>
+                <textarea name = "address" value = "" rows = "3" cols = "50"></textarea><br/>
+
+
+
+                <label for = "dob">Date Of Birth : </label>
+                <input type="date" name = dob value =""/><br/>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Employment and Financial Information : </legend>
+
+                    <label for = "ename">Employer Name : </label>
+                    <input type = "text" name = "ename" value = ""/><br/>
+
+                    <label for = "jtitle">Job Title : </label>
+                    <input type = "text" name = "jtitle" value = ""/><br/>
+                    
+                    <label for = "AnnualIncome">Annual Income : </label>
+                    <input type="number" name = "AnnualIncome" value = ""/><br/>
+
+                    <label for = "empduration">Employment Duration : </label>
+                    <input type="date" name = empduration value =""/><br/>
+               
+                    <label for = "MonthlyExpenses">Monthly Expenses : </label>
+                    <input type="number" name = "MonthlyExpenses" value = ""/><br/>
+
+                </fieldset>
+                
+                <fieldset>
+                    <legend> Loan Details : </legend>
+
+                    <label for = "loan">Loan Amount Requested : </label>
+                    <input type="number" name = "loan" value = ""/><br/>
+
+                    <label for ="loantype">Loan type : </label>
+                    <input type = "radio" name = "loantype" id = "p" value="personal"/>
+                    <label for = "loantype">personal loan  </label>
+                    <input type = "radio" name = "loantype" id = "e" value="eductional"/>
+                    <label for = "loantype">Educational loan   </label>
+                    <input type = "radio" name = "loantype" id = "g" value="gold"/>
+                    <label for = "loantype">Gold loan  </label><br/>
+
+                    <label for ="reason"> Loan Purpose : </label>
+                    <textarea name = "reason" value = "" rows = "5" cols = "50"></textarea><br/>
+
+                    <label for = "term">Preferred Loan Term (in months or years) : </label>
+                    <input type = "text" name = "term" value = ""/><br/>
+                       
+                </fieldset>
+
+
+                <fieldset>
+                    <legend>Upload Documents Section : </legend>
+                    <label for = "file">Id Proof : </label>
+                    <input type="file" name = "file" value = ""/><br/>
+                </fieldset>
+
+               <fieldset>
+                <legend>Terms and Conditions : </legend>
+                <p>
+                    1. Loan Disbursement
+The loan amount will be credited to the borrower’s account upon the completion of all formalities, including submission and verification of required documentation.<br/>
+
+2. Interest Rate
+The loan will carry an interest rate of X% (fixed/variable), calculated on a reducing balance method. Changes in the variable interest rate will be communicated at least 30 days in advance.
+
+3. Loan Repayment
+The loan will be repaid in equated monthly installments (EMIs) over a period of Y months. The EMI schedule, including due dates and amounts, will be shared with the borrower. Early payments or prepayments will reduce the outstanding balance accordingly, subject to the bank's prepayment policies.<br/>
+
+4. Prepayment and Foreclosure
+Prepayment of the loan, either in part or full, is allowed after a minimum lock-in period of Z months. A prepayment fee of P% will be charged on the outstanding principal for any prepayment made before the lock-in period ends.<br/>
+
+5. Fees and Charges
+A processing fee of Q% of the loan amount will be deducted before disbursement.
+Late payment will incur a penalty fee of R% per month on the overdue amount.
+Administrative fees for account maintenance and documentation changes, if any, will be applicable as per the bank’s schedule of charges.<br/>
+6. Collateral and Security
+For secured loans, the borrower agrees to pledge assets, such as real estate or financial instruments, as collateral. In case of default, the bank reserves the right to seize the collateral and recover the loan amount through appropriate legal channels.<br/>
+
+7. Loan Purpose
+The loan must be used exclusively for the stated purpose, as mentioned in the application. Any deviation in the usage of funds must be approved by the bank in writing.<br/>
+
+  "By submitting this application, you agree to the terms and conditions of our loan policies."</p>
+                
+ </fieldset>
+
+              
+                <h3>Consent and Agreement : </h3>
+                <p><input type = "checkbox" name = "Conditions" value = ""/>"I agree to the terms and conditions."</p>
+                
+             
+
+                <label for = "submit"></label>
+                <input type="submit" name = "submit" value = "submit"/><br/>
+    
+            </form>
+    
+
+        </div>
+        
+    </body>
+</html>
