@@ -1,0 +1,89 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #f0f8ff, #f4f4f4);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.t1 {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+th{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding:20px;
+    color:black;
+    font-size:20px;
+}
+
+label
+{
+    font-size: 1.1em;
+    /* margin-bottom: 10px; */
+    color: #555;
+    margin:8px;
+}
+
+input{
+    font-size:16px;
+    border-radius:5px;
+    outline: none;
+
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
+}
+
+select{
+    font-size: 0.85em;
+    border-radius: 8px;
+    margin:0px;
+    padding:0px;
+}
+
+legend {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.adddiv
+{
+    display:flex;
+    align-items:center
+}
+
+.submit-btn {
+    background-color: #007bff; /* Bank-like blue color */
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .submit-btn:active {
+    background-color: #004494; /* Even darker blue when clicked */
+    transform: scale(0.98); /* Slight scale down on click */
+  }
+  
