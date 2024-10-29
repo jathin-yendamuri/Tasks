@@ -1,0 +1,156 @@
+<body>
+    
+    <p>
+        1. JavaScript Program To Print Hello World <br>
+        2. JavaScript Program to Add Two Numbers <br>
+        3 JavaScript Program to Check if a number is Positive, Negative, or Zero <br>
+        4 JavaScript Program to Check if a Number is Odd or Even <br>
+        5. JavaScript Program to Find the Largest Among Three Numbers <br>
+        6. JavaScript Program to Check Prime Number <br>
+        7 JavaScript Program to Print All Prime Numbers in an Interval <br>
+        8. JavaScript Program to Find the Factorial of a Number <br>
+        9. JavaScript Program to Display the Multiplication Table <br>
+        10. JavaScript Program to Check Armstrong Number <br>
+        11. JavaScript Program to Find the Sum of Natural Numbers <br>
+        12. JavaScript Program to Check Whether a String is Palindrome or Not  <br>
+    </p>
+
+
+    Q1) <h4></h4>
+
+    Q2) <p>output on console.</p>
+
+    Q3) enter a number to check +ve or a -ve value : <input type = "number" name = "number" id = "number1" value=""/><button onclick="number()">click</button><p class = "number1"></p>
+
+    Q4) enter a number to check even or odd : <input type = "number" name = "number" id = "eo" value=""/><button onclick="evenodd()">click</button><p class = "eo"></p>
+
+    Q5) <h5>Largest number among three numbers : - </h5>
+        value 1 : <input type = "number" id = "n1" value=""/>
+        value 2 : <input type = "number" id = "n2" value=""/>
+        value 3 : <input type = "number" id = "n3" value=""/>
+        <button onclick="large()">click</button>
+        <p class="large"></p>
+
+    Q6)  enter a number to check prime or not : <input type ="number" value ="" id = "prime" onkeydown="prime()"/>
+         <h5 class = "prime"></h5>
+
+    Q7) Please Enter the interval for prime numbers : <input type="number" id="i1" value=""/>
+    <input type="number" id="i2" value=""/>
+    <button onclick="interval()">click</button>
+    <h5 class ="interval"></h5>
+     Q8) Enter a number to find the Factorial : <input type = "number" value = "" id = "fact"/><button onclick="factorial()">click</button>
+     <h4 class = "fact"></h4>
+
+     Q9) enter value to Display the Multiplication Table:  <input type = "number" value = "" id = "table"/><button onclick="table()">click</button>
+     <h5 class = "table"></h5>
+
+
+
+</body>
+<script>
+        // document.write("hello World..");
+    console.log("hello World..!");
+    document.querySelector("h4").innerHTML="hello World..!";
+    alert("hello World..!");
+
+    var a = 10 ;
+    var b = 20 ;
+    var res = a+b;
+    console.log(res);
+
+    function number()
+    {
+        var n = document.querySelector("#number1").value;
+        if(n>=1)
+        document.querySelector(".number1").innerHTML="it is a +ve number";
+    else if (n<0)
+    document.querySelector(".number1").innerHTML="it is a -ve number";
+else
+document.querySelector(".number1").innerHTML="it is zero";
+    }
+
+    function evenodd()
+    {
+        var n = document.querySelector("#eo").value;
+        if(n%2==0)
+        document.querySelector(".eo").innerHTML= "even number"
+        else
+        document.querySelector(".eo").innerHTML= "odd number"
+    }
+    
+    function large()
+    {
+        const a = Number(document.getElementById("n1").value);
+        const b = Number(document.getElementById("n2").value);
+        const c = Number(document.getElementById("n3").value);
+        console.log(a);
+        console.log(b);
+        console.log(c);
+
+
+        if (a>b && a>c)
+        document.querySelector(".large").innerHTML=a+" is the largest number";
+        else if (b>a && b>c)
+        document.querySelector(".large").innerHTML=b+" is the largest number";
+        else 
+        document.querySelector(".large").innerHTML=c+" is the largest number";
+    }
+
+    function prime(e)
+    {
+        var result,count=0;
+        var a = document.querySelector("#prime").value;
+        for (var i=2; i<a;i++)
+        if(a%i==0)count++;
+        if (count!=0)
+        result="not a prime number";
+        else
+        result="prime number";
+        // console.log(e.keys);
+        document.querySelector(".prime").innerHTML=result;
+
+    }
+
+    function interval()
+    {
+        var count=0,res="";
+        var i1 = document.querySelector("#i1").value;
+        var i2 = document.querySelector("#i2").value;
+        for(var i = i1 ; i <=i2;i++)
+    {
+        count=0
+        for(var j=2;j<i;j++)
+        if(i%j==0)count++;
+        if (count!=0)
+        continue;
+        else
+        res=res+i+"  |  ";
+    }
+    console.log(res);   
+    document.querySelector(".interval").innerHTML=res;
+    }
+
+    function factorial()
+    {
+        var fact=1;
+        var n=  document.querySelector("#fact").value;
+        for(var i=1; i<=n;i++)
+        fact =fact*i;
+        document.querySelector(".fact").innerHTML=fact;
+    }
+
+    function table()
+    {
+        let res=""
+        let n =document.querySelector("#table").value;
+        for(var i=1; i<=10;i++)
+    {
+        res=res+n+" * "+i+`= ${n*i}<br>`;
+    }
+    document.querySelector(".table").innerHTML=res;
+    }
+
+     
+   
+
+</script>

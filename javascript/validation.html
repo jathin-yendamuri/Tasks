@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <form id = "myform" action="../submit.html">
+         
+        fname : <input type = "text" name="fiirstname" id = "ffname" value="" oninput="fname(this)" placeholder="Enter only letters"/><br><br>
+        lname : <input type = "text" name="lname" id = "lname" value="" oninput="fname(this)" placeholder="Enter only letters"/><br><br>
+        password:  <input type = "password" name="pass" id = "pass" value="" oninput="password(this)" placeholder="At least 10 characters"/><br><br>
+        conpassword : <input type = "password" name="conpass" id = "conpass" value="" oninput="conpassword(this)"  placeholder="Confirm your password"/><br><br>
+        e-mail : <input type = "email" name = "mail" id="mail" value="" oninput="email(this)" placeholder="Enter email"/><br><br>
+        ph number : <input type = "tel" name = "phn" id ="phn" oninput="phno(this)" placeholder="phone number"/><br><br>
+        text area : <textarea rows="3" cols="30" oninput="textarea(this)" ></textarea><br><br>
+        <label class = "gender" for = "gender">Gender : <input type = "radio" name = "gender" id = "m" value="male"/>
+            <label for = "gender">Male  </label>
+            <input type = "radio" name = "gender" id = "f" value="female"/>
+            <label for = "gender">Female  </label>
+            <input type = "radio" name = "gender" id = "o" value="others"/>
+            <label for = "gender">others  </label></label><br/>
+         
+        <input type = "submit" onclick="handlesubmit()"/>
+      
+</form>
+
+        <script src = "validation.js">
+        </script>
+    </body>
+</html>

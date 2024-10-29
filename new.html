@@ -4,96 +4,100 @@
         <link rel="stylesheet" href = "new.css"/>
     </head>
     <body>
+
+       <form action="submit.html">
         <div class = "t1">
            
-        <fieldset>
-            <legend>Loan Application : </legend>
-        <table>
-            <tr><th colspan="2">Personal Information</th></tr>
-            <tr>
+            <fieldset>
+                <legend>Loan Application : </legend>
+            <table>
+                <tr><th colspan="2">Personal Information</th></tr>
+                <tr>
+                    
+                    <td>
+                        <label for = "title"> Title : 
+                            <select>
+                                <option>Mr.</option>
+                                <option>Ms.</option>
+                                <option>Mrs.</option>
+                            </select>
+                        </label>
+                            <label for="fnm">First Name : <input type = "text" name ="fnm" oninput="fname(this)" placeholder="First Name"/> </label><br><br>
+                            <label for = "mail">e-mail : <input type = "email" name ="mail" oninput="email(this)" placeholder="e-mail"/> </label><br><br>
+                            <label for = "dob">Date Of Birth : <input type = "date" name ="dob" required/> </label><br><br>
+                            <div class ="adddiv">
+                                <label for ="address">Address : </label>
+                                    <textarea name = "address" value = "" rows = "2" cols = "25"></textarea><br/>
+                            </div>
+    
+                    </td>
+                    <td>
+                        <label for ="lnm">Last Name : <input type = "text" name ="lnm" required/> </label><br><br>
+                        <label for = "tel">Tel-number : <input type = "tel" name ="tel" required/> </label><br><br>
+                        <label for = "martial">Martial status :   <select>
+                            <option>single</option>
+                            <option>Married</option>
+                            <option>others</option>
+                        </select> </label><br><br>
+                        <label class = "gender" for = "gender">Gender : <input type = "radio" name = "gender" id = "m" value="male"/>
+                            <label for = "gender">Male  </label>
+                            <input type = "radio" name = "gender" id = "f" value="female"/>
+                            <label for = "gender">Female  </label>
+                            <input type = "radio" name = "gender" id = "o" value="others"/>
+                            <label for = "gender">others  </label></label><br/>  
+                    </td>
+               
+                </tr>
+           <tr><th colspan="2">Employment and Financial Information </th></tr>
+               
+                <tr>
+                    <td>
+                        <label for = "ename">Employer Name : <input type = "text" name = "ename" value = ""/></label><br/><br>
+                        <label for = "jtitle">Job Title : <input type = "text" name = "jtitle" value = ""/></label><br/><br>
+                        <label for = "empduration">Employment Duration : <input type="date" name = empduration value =""/></label><br/><br>
+    
+                    </td>
+                    <td>
+                        <label for="lamt">Loan Amount Required : <input type = "number" name ="lamt" required/> </label><br><br>
+                        <label for = "AnnualIncome">Annual Income : <input type="number" name = "AnnualIncome" value = ""/></label><br/><br>
+                        <label for = "MonthlyExpenses">Monthly Expenses : <input type="number" name = "MonthlyExpenses" value = ""/></label><br/><br>
+             
+                    </td>
+    
+                </tr>
+    
+                <tr><th colspan="2"> Loan Details </th></tr>
+                <tr>
+                    <td>
+                        <label for = "loan">Loan Amount Requested : <input type="number" name = "loan" value = ""/></label><br/><br>
+                        <label for = "term">Preferred Loan Term (in mm or yyyy) : <input type = "text" name = "term" value = ""/></label><br><br/>
+                    </td>
+                    <td>
+                        <label for ="loantype">Loan type : <input type = "radio" name = "loantype" id = "p" value="personal"/>
+                            <label for = "loantype">personal</label>
+                            <input type = "radio" name = "loantype" id = "e" value="eductional"/>
+                            <label for = "loantype">Educational</label>
+                            <input type = "radio" name = "loantype" id = "g" value="gold"/>
+                            <label for = "loantype">Gold loan</label></label><br><br/>
+    
+                            <div class ="adddiv"><label for ="reason"> Loan Purpose :</textarea></label>
+                                <textarea name = "reason" value = "" rows = "2" cols = "25"></textarea><br/><br></div>
+                    </td>
+                </tr>
+    
+                <tr><th colspan="2">Upload Documents Section</th></tr>
+                <tr>
+                    <td> <label for = "file">Id Proof : <input type="file" name = "file" value = ""/></label><br/><br></td>
+                </tr>
+    
+                <tr><th colspan="2">Consent and Agreement :<br><p><input type = "checkbox" name = "Conditions" value = ""/>"I agree to the terms and conditions."</p></th></tr>
                 
-                <td>
-                    <label for = "title"> Title : 
-                        <select>
-                            <option>Mr.</option>
-                            <option>Ms.</option>
-                            <option>Mrs.</option>
-                        </select>
-                    </label>
-                        <label for="fnm">First Name : <input type = "text" name ="fnm" required/> </label><br><br>
-                        <label for = "mail">e-mail : <input type = "email" name ="mail" required/> </label><br><br>
-                        <label for = "dob">Date Of Birth : <input type = "date" name ="dob" required/> </label><br><br>
-                        <div class ="adddiv">
-                            <label for ="address">Address : </label>
-                                <textarea name = "address" value = "" rows = "2" cols = "25"></textarea><br/>
-                        </div>
-
-                </td>
-                <td>
-                    <label for ="lnm">Last Name : <input type = "text" name ="lnm" required/> </label><br><br>
-                    <label for = "tel">Tel-number : <input type = "tel" name ="tel" required/> </label><br><br>
-                    <label for = "martial">Martial status :   <select>
-                        <option>single</option>
-                        <option>Married</option>
-                        <option>others</option>
-                    </select> </label><br><br>
-                    <label class = "gender" for = "gender">Gender : <input type = "radio" name = "gender" id = "m" value="male"/>
-                        <label for = "gender">Male  </label>
-                        <input type = "radio" name = "gender" id = "f" value="female"/>
-                        <label for = "gender">Female  </label>
-                        <input type = "radio" name = "gender" id = "o" value="others"/>
-                        <label for = "gender">others  </label></label><br/>  
-                </td>
-           
+                <tr><th colspan="2"><label for = "submit"><input class ="submit-btn" type="submit" name = "submit" value = "submit"/></label></th><br/><br>
             </tr>
-       <tr><th colspan="2">Employment and Financial Information </th></tr>
-           
-            <tr>
-                <td>
-                    <label for = "ename">Employer Name : <input type = "text" name = "ename" value = ""/></label><br/><br>
-                    <label for = "jtitle">Job Title : <input type = "text" name = "jtitle" value = ""/></label><br/><br>
-                    <label for = "empduration">Employment Duration : <input type="date" name = empduration value =""/></label><br/><br>
-
-                </td>
-                <td>
-                    <label for="lamt">Loan Amount Required : <input type = "number" name ="lamt" required/> </label><br><br>
-                    <label for = "AnnualIncome">Annual Income : <input type="number" name = "AnnualIncome" value = ""/></label><br/><br>
-                    <label for = "MonthlyExpenses">Monthly Expenses : <input type="number" name = "MonthlyExpenses" value = ""/></label><br/><br>
-         
-                </td>
-
-            </tr>
-
-            <tr><th colspan="2"> Loan Details </th></tr>
-            <tr>
-                <td>
-                    <label for = "loan">Loan Amount Requested : <input type="number" name = "loan" value = ""/></label><br/><br>
-                    <label for = "term">Preferred Loan Term (in mm or yyyy) : <input type = "text" name = "term" value = ""/></label><br><br/>
-                </td>
-                <td>
-                    <label for ="loantype">Loan type : <input type = "radio" name = "loantype" id = "p" value="personal"/>
-                        <label for = "loantype">personal</label>
-                        <input type = "radio" name = "loantype" id = "e" value="eductional"/>
-                        <label for = "loantype">Educational</label>
-                        <input type = "radio" name = "loantype" id = "g" value="gold"/>
-                        <label for = "loantype">Gold loan</label></label><br><br/>
-
-                        <div class ="adddiv"><label for ="reason"> Loan Purpose :</textarea></label>
-                            <textarea name = "reason" value = "" rows = "2" cols = "25"></textarea><br/><br></div>
-                </td>
-            </tr>
-
-            <tr><th colspan="2">Upload Documents Section</th></tr>
-            <tr>
-                <td> <label for = "file">Id Proof : <input type="file" name = "file" value = ""/></label><br/><br></td>
-            </tr>
-
-            <tr><th colspan="2">Consent and Agreement :<br><p><input type = "checkbox" name = "Conditions" value = ""/>"I agree to the terms and conditions."</p></th></tr>
-            
-            <tr><th colspan="2"><label for = "submit"><input class ="submit-btn" type="submit" name = "submit" value = "submit"/></label></th><br/><br>
-        </tr>
-        </table>
-    </fieldset>
-    </div>
+            </table>
+        </fieldset>
+        </div>
+       </form>
+    <script src="./javascript/validation.js"></script>
     </body>
 </html>
